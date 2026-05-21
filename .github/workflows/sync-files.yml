@@ -49,6 +49,9 @@ jobs:
            sed -i 's/^CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s=y/# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s is not set/' ./armv8/.config
            sed -i 's/^CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r6s=y/# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r6s is not set/' ./armv8/.config
            sed -i 's/^CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r1=y/# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r1 is not set/' ./armv8/.config
+           sed -i 's/^CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_a2=y/# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_a2 is not set/' ./armv8/.config
+           sed -i 's/^CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r2=y/# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r2 is not set/' ./armv8/.config
+           sed -i 's/^CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-5t=y/# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_rock-5t is not set/' ./armv8/.config
            
            sed -i 's/^CONFIG_PACKAGE_adb=y/# CONFIG_PACKAGE_adb is not set/' ./armv8/.config
            sed -i 's/^CONFIG_PACKAGE_adb-enablemodem=y/# CONFIG_PACKAGE_adb-enablemodem is not set/' ./armv8/.config
@@ -119,6 +122,11 @@ jobs:
            sed -i 's/^CONFIG_MODEMMANAGER_WITH_MBIM=y/# CONFIG_MODEMMANAGER_WITH_MBIM is not set/' ./armv8/.config
            sed -i 's/^CONFIG_MODEMMANAGER_WITH_QMI=y/# CONFIG_MODEMMANAGER_WITH_QMI is not set/' ./armv8/.config
            sed -i 's/^CONFIG_MODEMMANAGER_WITH_QRTR=y/# CONFIG_MODEMMANAGER_WITH_QRTR is not set/' ./armv8/.config
+           
+           sed -i 's/^CONFIG_PACKAGE_webdav2=y/# CONFIG_PACKAGE_webdav2 is not set/' ./armv8/.config
+           sed -i 's/^CONFIG_PACKAGE_unishare=y/# CONFIG_PACKAGE_unishare is not set/' ./armv8/.config
+           sed -i 's/^CONFIG_PACKAGE_luci-app-unishare=y/# CONFIG_PACKAGE_luci-app-unishare is not set/' ./armv8/.config
+           sed -i 's/^CONFIG_PACKAGE_luci-i18n-unishare-zh-cn=y/# CONFIG_PACKAGE_luci-i18n-unishare-zh-cn is not set/' ./armv8/.config
            # ----------------结束----------------
            echo -e "\\n$configdata" >> ./armv8/.config
            # 清除.config配置文件里面重复的配置项
